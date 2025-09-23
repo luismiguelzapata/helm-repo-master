@@ -1,5 +1,5 @@
 apiVersion: v2
-name: helm-umbrella-master
+name: helm-repo-master
 description: HelmUmbrellaChartMaster
 type: application
 version: "2.0.0"
