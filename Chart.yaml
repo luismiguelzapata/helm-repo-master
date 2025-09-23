@@ -1,0 +1,5 @@
+apiVersion: v2
+name: helm-umbrella-master
+description: HelmUmbrellaChartMaster
+type: application
+version: "2.0.0"

@@ -1,0 +1,5 @@
+image:
+  tag: stage
+
+service:
+  type: black

@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  helm-umbrella-master:
+  - apiVersion: v2
+    created: "2025-09-23T17:51:09.266780805+02:00"
+    description: HelmUmbrellaChartMaster
+    digest: cc7a1a3eddcc80f5f5e78376bb8a7d55234b65cd2f11648d25dc2b312f6d1551
+    name: helm-umbrella-master
+    type: application
+    urls:
+    - https://luismiguelzapata.github.io/deleteme/helm-umbrella-master-2.0.0.tgz
+    version: 2.0.0
+generated: "2025-09-23T17:51:09.264816579+02:00"
