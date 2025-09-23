@@ -1,3 +1,13 @@
 apiVersion: v1
-entries: {}
-generated: "2025-09-23T18:31:56.729733078+02:00"
+entries:
+  helm-repo-master:
+  - apiVersion: v2
+    created: "2025-09-23T18:37:44.371170455+02:00"
+    description: HelmUmbrellaChartMaster
+    digest: d073a4729d96b51e11c224406b5e12ce0f95bd475e5a9d814fe24994915e04a9
+    name: helm-repo-master
+    type: application
+    urls:
+    - https://luismiguelzapata.github.io/helm-repo-master/helm-repo-master-1.0.2.tgz
+    version: 1.0.2
+generated: "2025-09-23T18:37:44.366752863+02:00"
