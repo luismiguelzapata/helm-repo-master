@@ -3,24 +3,37 @@ helm Chart examples and tutorial resources
 
 This is an example charts repository.
 
-### How It Works
+### On ArgoCD
+1) Create the namespaces of the projects
+2) Apply the appProject.yaml
 
-I set up GitHub Pages to point to the `docs` folder. From there, I can
-create and publish docs like this:
+### Updated Chart.-
+1) Update the version of the Chart.yaml when modify any repository files.
+2) Proceed like the following steps
+
+
+
 
 ```console
-$ helm package .
-$ mv frontend-nginx-*.tgz docs/
-$ helm repo index docs --url https://silvinux.github.io/helm-tutorial/docs
+$ cd helm-repo-master
+$ (If not exist) mkdir docs
+$ helm package . 
+$ mv mv helm-repo-master-*.tgz docs
+$ helm repo index docs --url https://luismiguelzapata.github.io/helm-repo-master
 $ git add --all
-$ git commit -am "Release Version "
-$ git push origin master
+$ git commit -am "Updated to version Release Version "
+$ git push 
 ```
 
-From there, I can do a `helm repo add helm-tutorials https://silvinux.github.io/helm-tutorial/docs`
+From there, I can do a `helm repo add helm-repo-master https://luismiguelzapata.github.io/helm-repo-master`
 
 
-### Building using Library:
+### Running
+```console
+$ kubectl apply helm-app-01/argocd/applicationset.yaml
+```
+
+### Building using Library: (NO lo uso)
 ```
 $ helm package library-chart 
 $ helm dependency build nginx-chart
